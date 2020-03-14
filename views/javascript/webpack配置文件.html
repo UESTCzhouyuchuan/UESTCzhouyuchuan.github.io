@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack的配置文件webpack.config.js | 玉川的Blog</title>
+    <meta name="description" content="爱代码，爱学习，爱鑫鑫">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/static/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="UESTCzhouyuchuan,blog.yulovexin.xyz,玉川鑫鑫,博客">
+  <meta name="theme-color" content="#3c67bd">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.92773d00.css" as="style"><link rel="preload" href="/assets/js/app.fe7f438f.js" as="script"><link rel="preload" href="/assets/js/3.8b331511.js" as="script"><link rel="preload" href="/assets/js/1.49e6bab8.js" as="script"><link rel="preload" href="/assets/js/19.055ec77a.js" as="script"><link rel="prefetch" href="/assets/js/10.73a5ffb3.js"><link rel="prefetch" href="/assets/js/11.f9468abb.js"><link rel="prefetch" href="/assets/js/12.33de610a.js"><link rel="prefetch" href="/assets/js/13.03e5d4cd.js"><link rel="prefetch" href="/assets/js/14.b6ba907b.js"><link rel="prefetch" href="/assets/js/15.b17ffdc7.js"><link rel="prefetch" href="/assets/js/16.127c50fa.js"><link rel="prefetch" href="/assets/js/17.2f4d8688.js"><link rel="prefetch" href="/assets/js/18.0c4bd0f1.js"><link rel="prefetch" href="/assets/js/20.04d63537.js"><link rel="prefetch" href="/assets/js/21.661430dd.js"><link rel="prefetch" href="/assets/js/22.7194519d.js"><link rel="prefetch" href="/assets/js/23.1e18ff48.js"><link rel="prefetch" href="/assets/js/24.b4e53c1f.js"><link rel="prefetch" href="/assets/js/25.d442e6a3.js"><link rel="prefetch" href="/assets/js/26.e5402327.js"><link rel="prefetch" href="/assets/js/4.e5809925.js"><link rel="prefetch" href="/assets/js/5.092c3573.js"><link rel="prefetch" href="/assets/js/6.eba1c2d9.js"><link rel="prefetch" href="/assets/js/7.9fe8d06b.js"><link rel="prefetch" href="/assets/js/8.5c812d67.js"><link rel="prefetch" href="/assets/js/9.3d09b1f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.92773d00.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>玉川的Blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>玉川</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/static/blog.png" alt="玉川的Blog" class="logo"> <span class="site-name">玉川的Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/css/" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javascript/" class="nav-link"><i class="iconfont undefined"></i>
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/markdown/" class="nav-link"><i class="iconfont undefined"></i>
+  markdown
+</a></li><li class="dropdown-item"><!----> <a href="/categories/other/" class="nav-link"><i class="iconfont undefined"></i>
+  other
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/javascript/tencent://message/?uin=1738733078.html" class="nav-link"><i class="iconfont reco-qq"></i>
+  QQ
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/uestczhouyuchuan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/static/lovely-girl.jpg" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    玉川
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>13</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>26</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/css/" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javascript/" class="nav-link"><i class="iconfont undefined"></i>
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/markdown/" class="nav-link"><i class="iconfont undefined"></i>
+  markdown
+</a></li><li class="dropdown-item"><!----> <a href="/categories/other/" class="nav-link"><i class="iconfont undefined"></i>
+  other
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/views/javascript/tencent://message/?uin=1738733078.html" class="nav-link"><i class="iconfont reco-qq"></i>
+  QQ
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/uestczhouyuchuan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>webpack的配置文件webpack.config.js</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#前言" class="sidebar-link">前言</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#选项" class="sidebar-link">选项</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#mode" class="sidebar-link">mode</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#entry-and-content" class="sidebar-link">entry and content</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#entry" class="sidebar-link">entry</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#content" class="sidebar-link">content</a></li></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#output" class="sidebar-link">output</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#module-模块" class="sidebar-link">module 模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rules" class="sidebar-link">Rules</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rule-resource" class="sidebar-link">Rule.resource</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rule-test" class="sidebar-link">Rule.test</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rule-include" class="sidebar-link">Rule.include</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rule-exclude" class="sidebar-link">Rule.exclude</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rule-use" class="sidebar-link">Rule.use</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#rule-loader" class="sidebar-link">Rule.loader</a></li></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#resolve" class="sidebar-link">resolve</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#resolve-alias" class="sidebar-link">resolve.alias</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#resolve-extensions" class="sidebar-link">resolve.extensions</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#resolve-plugins" class="sidebar-link">resolve.plugins</a></li></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#plugins" class="sidebar-link">plugins</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#devserver" class="sidebar-link">devServer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#devserver-compress" class="sidebar-link">devServer.compress</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#devserver-https" class="sidebar-link">devServer.https</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#devserver-port" class="sidebar-link">devServer.port</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#devserver-proxy" class="sidebar-link">devServer.proxy</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#devserver-host" class="sidebar-link">devServer.host</a></li></ul></li><li><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#watch-和-watchoptions" class="sidebar-link">watch 和 watchOptions</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#watchoptions-aggregatetimeout" class="sidebar-link">watchOptions.aggregateTimeout</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#watchoptions-ignored" class="sidebar-link">watchOptions.ignored</a></li><li class="sidebar-sub-header"><a href="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html#watchoptions-poll" class="sidebar-link">watchOptions.poll</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>webpack的配置文件webpack.config.js</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>玉川</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>webpack的配置文件webpack.config.js</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>玉川</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-02-05</span></i> <i class="iconfont reco-eye" data-v-484a899e><span id="/views/javascript/webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-484a899e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      webpack.config.js
+    </span><span class="tag-item" data-v-484a899e>
+      webpack
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>昨天写了通过 react 项目配置 webpack，发现 webpack 的配置文件需要单独拿出来学一学。</p> <p><img src="https://img.shields.io/npm/v/webpack.svg?label=webpack&amp;style=flat-square&amp;maxAge=3600" alt="https://img.shields.io/npm/v/webpack.svg?label=webpack&amp;style=flat-square&amp;maxAge=3600"> <strong>官方文档地址</strong>：<a href="https://www.webpackjs.com/configuration/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="选项"><a href="#选项" class="header-anchor">#</a> 选项</h2> <p>以下列举常用的<code>webpack.config.js</code>选项</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+
+module.exports = {
+  mode: &quot;production&quot;, // 模式，&quot;production&quot; | &quot;development&quot; | &quot;none&quot;
+  entry: &quot;./src/index.js&quot;, // 入口文件，可以是多个，当前值为默认值，string | object | array
+  output: {
+    path: path.resolve(__dirname, &quot;dist&quot;), // string,所有输出文件的目标的绝对路径
+    filename: &quot;bundle.js&quot;, // string,出口分块
+    publicPath: &quot;/assets/&quot;, // string，输出解析文件的目录
+  },
+  module: { // 关于模块配置
+    rules: [ // 模块规则（配置 loader、解析器等选项）
+      {
+        test: /\.jsx|js?$/, // 文件名正则
+        exclude: [ // 排除项
+          path.resolve(__dirname, &quot;node_modules&quot;)
+        ],
+        loader: &quot;babel-loader&quot;, // 使用的模块
+      },
+    ],
+  },
+  resolve: { //解析模块请求的选项
+    extensions: [&quot;.js&quot;, &quot;.json&quot;, &quot;.jsx&quot;, &quot;.css&quot;],// 使用的扩展名
+    alias:{ //别名
+      &quot;@&quot;: path.join(__dirname, &quot;./src&quot;), // 源代码根目录别名
+    }
+  },
+  plugins: [],
+  devServer: { // 开发过程中
+    proxy: { // 代理
+      '/api': {
+        target: 'http://localhost:3000',
+        secure: false,
+        pathRewrite: {
+          &quot;^api&quot;: &quot;api&quot;,// 这是默认值即http://localhost:3000/api
+        }
+      }
+    },
+  },
+  watch: false, // 监听文件改变
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><h2 id="mode"><a href="#mode" class="header-anchor">#</a> mode</h2> <p>当前模式，可选择为模式，<code>&quot;production&quot; | &quot;development&quot; | &quot;none&quot;</code>，代表生产模式，开发模式，无模式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mode: &quot;production&quot;, // enable many optimizations for production builds
+mode: &quot;development&quot;, // enabled useful tools for development
+mode: &quot;none&quot;, // no defaults
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>注</strong>：mode 值是必填项</p> <h2 id="entry-and-content"><a href="#entry-and-content" class="header-anchor">#</a> entry and content</h2> <p><a href="https://www.webpackjs.com/configuration/entry-context/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/entry-context/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="entry"><a href="#entry" class="header-anchor">#</a> entry</h3> <p>项目入口文件，可以是多个文件。如果传递一个数组，那么数组的每一项都会执行。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>entry: &quot;./src/index.js&quot;,// SPA单页面
+entry: {
+  home: &quot;./home.js&quot;,
+  about: &quot;./about.js&quot;,
+  contact: &quot;./contact.js&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>注</strong>：默认值为<code>./src/index.js</code></p> <h3 id="content"><a href="#content" class="header-anchor">#</a> content</h3> <p>全局上下文，即项目源码的基础目录。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  context: path.resolve(__dirname, 'src')
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="output"><a href="#output" class="header-anchor">#</a> output</h2> <p>出口文件。</p> <p><a href="https://www.webpackjs.com/configuration/output/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/output/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="module-模块"><a href="#module-模块" class="header-anchor">#</a> module 模块</h2> <p><a href="https://www.webpackjs.com/configuration/module/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/module/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>规定使用何种 loader 处理满足条件的文件。</p> <h3 id="rules"><a href="#rules" class="header-anchor">#</a> Rules</h3> <p>基本结构</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>rules:[
+  {
+    resource: {
+      test:,
+      include:,
+      exclude:,
+      and:[],
+      or:[],
+      not:[]
+    },
+    test:,
+    include:,
+    exclude:,
+    loader:,
+    use:,
+  },
+]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>规则数组。</p> <h3 id="rule-resource"><a href="#rule-resource" class="header-anchor">#</a> Rule.resource</h3> <p>{ test: Condition }：匹配特定条件。一般是提供一个正则表达式或正则表达式的数组，但这不是强制的。</p> <p>{ include: Condition }：匹配特定条件。一般是提供一个字符串或者字符串数组，但这不是强制的。</p> <p>{ exclude: Condition }：排除特定条件。一般是提供一个字符串或字符串数组，但这不是强制的。</p> <p>{ and: [Condition] }：必须匹配数组中的所有条件</p> <p>{ or: [Condition] }：匹配数组中任何一个条件</p> <p>{ not: [Condition] }：必须排除这个条件</p> <p>condition 可以是这些之一：</p> <ul><li>字符串：匹配输入必须以提供的字符串开始。是的。目录绝对路径或文件绝对路径。</li> <li>正则表达式：test 输入值。</li> <li>函数：调用输入的函数，必须返回一个真值(truthy value)以匹配。</li> <li>条件数组：至少一个匹配条件。</li> <li>对象：匹配所有属性。每个属性都有一个定义行为。</li></ul> <h3 id="rule-test"><a href="#rule-test" class="header-anchor">#</a> Rule.test</h3> <p>Rule.test 是 Rule.resource.test 的简写。如果你提供了一个 Rule.test 选项，就不能再提供 Rule.resource。</p> <h3 id="rule-include"><a href="#rule-include" class="header-anchor">#</a> Rule.include</h3> <p>Rule.include 是 Rule.resource.include 的简写。如果你提供了 Rule.include 选项，就不能再提供 Rule.resource。</p> <h3 id="rule-exclude"><a href="#rule-exclude" class="header-anchor">#</a> Rule.exclude</h3> <p>Rule.exclude 是 Rule.resource.exclude 的简写。如果你提供了 Rule.exclude 选项，就不能再提供 Rule.resource。</p> <h3 id="rule-use"><a href="#rule-use" class="header-anchor">#</a> Rule.use</h3> <p>应用于模块的 UseEntries 列表。每个入口(entry)指定使用一个 loader。</p> <p>传递字符串（如：use: [ &quot;style-loader&quot; ]）是 loader 属性的简写方式（如：use: [ { loader: &quot;style-loader &quot;} ]）。</p> <p>loader 可以是多个，webpack 会从右向左即从最后一个到第一个应用这些 loader。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>use: [
+  'style-loader',
+  {
+    loader: 'css-loader',
+    options: {
+      importLoaders: 1
+    }
+  },
+  {
+    loader: 'less-loader',
+    options: {
+      noIeCompat: true
+    }
+  }
+]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="rule-loader"><a href="#rule-loader" class="header-anchor">#</a> Rule.loader</h3> <p>Rule.loader 是 Rule.use: [ { loader } ] 的简写。</p> <h2 id="resolve"><a href="#resolve" class="header-anchor">#</a> resolve</h2> <p><a href="https://www.webpackjs.com/configuration/resolve/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/resolve/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+这些选项能设置模块如何被解析。</p> <p>目录结构。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>resolve: {
+  alias: {},
+  extensions: []
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="resolve-alias"><a href="#resolve-alias" class="header-anchor">#</a> resolve.alias</h3> <p>创建 import 或 require 的别名，来确保模块引入变得更简单。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>alias: {
+  Utilities: path.resolve(__dirname, 'src/utilities/'),
+  zyz$: path.resolve(__dirname, 'path/to/file.js')
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>使用精准解析，在字符串后面添加<code>$</code>表示精准解析，不解析其子目录。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Test1 from 'xyz'; // 精确匹配，所以 path/to/file.js 被解析和导入
+import Test2 from 'xyz/file.js'; // 非精确匹配，触发普通解析
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="resolve-extensions"><a href="#resolve-extensions" class="header-anchor">#</a> resolve.extensions</h3> <p>自动解析确定的扩展。默认值为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>extensions: [&quot;.js&quot;, &quot;.json&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可以在引入文件时不带扩展名。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import File from '../path/to/file'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="resolve-plugins"><a href="#resolve-plugins" class="header-anchor">#</a> resolve.plugins</h3> <p>额外的解析插件列表。它允许插件，如 <code>DirectoryNamedWebpackPlugin</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>plugins: [
+  new DirectoryNamedWebpackPlugin()
+]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="plugins"><a href="#plugins" class="header-anchor">#</a> plugins</h2> <p><a href="https://www.webpackjs.com/configuration/plugins/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/plugins/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>webpack 插件列表。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const htmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;);
+// 新建插件实例
+const htmlPlugin = new htmlWebpackPlugin({
+	template: path.join(__dirname, &quot;./src/index.html&quot;), // 目标文件
+	filename: &quot;index.html&quot;, //生成的文件
+});
+module.exports = {
+  plugins: [htmlPlugin],
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="devserver"><a href="#devserver" class="header-anchor">#</a> devServer</h2> <p><a href="https://www.webpackjs.com/configuration/dev-server/" target="_blank" rel="noopener noreferrer">https://www.webpackjs.com/configuration/dev-server/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>通过来自 webpack-dev-server 的这些选项，能够用多种方式改变其行为。</p> <h3 id="devserver-compress"><a href="#devserver-compress" class="header-anchor">#</a> devServer.compress</h3> <p>一切服务都启用 gzip 压缩：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>compress: true
+或者CLI
+webpack-dev-server --compress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="devserver-https"><a href="#devserver-https" class="header-anchor">#</a> devServer.https</h3> <p>默认情况下，dev-server 通过 HTTP 提供服务。也可以选择带有 HTTPS 的 HTTP/2 提供服务。</p> <p>也可以使用命令。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>webpack-dev-server --https --key /path/to/server.key --cert /path/to/server.crt --cacert /path/to/ca.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="devserver-port"><a href="#devserver-port" class="header-anchor">#</a> devServer.port</h3> <p>指定要监听请求的端口号：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>port: 8080
+webpack-dev-server --port 8080
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="devserver-proxy"><a href="#devserver-proxy" class="header-anchor">#</a> devServer.proxy</h3> <p>用于跨域 API 接口。</p> <p>代理简写。请求到 /api/users 现在会被代理到请求<code>http://localhost:3000/api/users</code>上。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>proxy: {
+  &quot;/api&quot;: &quot;http://localhost:3000&quot;
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>也可以重写 api。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>proxy: {
+  &quot;/api&quot;: {
+    target: &quot;http://localhost:3000&quot;,
+    pathRewrite: {&quot;^/api&quot; : &quot;&quot;}
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>也可以使用<code>https</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>roxy: {
+  &quot;/api&quot;: {
+    secure: true
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="devserver-host"><a href="#devserver-host" class="header-anchor">#</a> devServer.host</h3> <p>指定使用一个 host。默认是 localhost。如果你希望服务器外部可访问，指定如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>host: &quot;0.0.0.0&quot;
+webpack-dev-server --host 0.0.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="watch-和-watchoptions"><a href="#watch-和-watchoptions" class="header-anchor">#</a> watch 和 watchOptions</h2> <p>watch 是打开文件监听模式。</p> <blockquote><p>webpack-dev-server 和 webpack-dev-middleware 里 Watch 模式默认开启。</p></blockquote> <h3 id="watchoptions-aggregatetimeout"><a href="#watchoptions-aggregatetimeout" class="header-anchor">#</a> watchOptions.aggregateTimeout</h3> <p>当第一个文件更改，会在重新构建前增加延迟。这个选项允许 webpack 将这段时间内进行的任何其他更改都聚合到一次重新构建里。以毫秒为单位：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>aggregateTimeout: 300 // 默认值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="watchoptions-ignored"><a href="#watchoptions-ignored" class="header-anchor">#</a> watchOptions.ignored</h3> <p>排除监听文件的正则表达式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ignored: /node_modules/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="watchoptions-poll"><a href="#watchoptions-poll" class="header-anchor">#</a> watchOptions.poll</h3> <p>通过传递 true 开启 polling，或者指定毫秒为单位进行轮询检查文件变动。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>poll: 1000 // 每秒检查一次变动
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><div class="valine-wrapper"><div id="valine"></div></div></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.fe7f438f.js" defer></script><script src="/assets/js/3.8b331511.js" defer></script><script src="/assets/js/1.49e6bab8.js" defer></script><script src="/assets/js/19.055ec77a.js" defer></script>
+  </body>
+</html>
